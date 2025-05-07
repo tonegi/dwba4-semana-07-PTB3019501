@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>IFSP - Instituto Federal São Paulo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+      background: #f4f4f4;
+    }
+
+    .top-bar {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .top-bar nav {
+      position: relative;
+    }
+
+    .top-bar nav > a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 5px 10px;
+    }
+
+    .top-bar nav > a:hover {
+      background-color: #cc0000; 
+      border-radius: 4px;
+    }
+
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+
+    .dropdown > a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 5px 10px;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      top: 100%;
+      left: 0;
+      border-radius: 4px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+      background-color: white;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f0f0f0; 
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .logo-bar {
+      background-color: #008000;
+      padding: 10px 20px;
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-bar img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    .logo-bar .text {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo-bar .text small {
+      display: block;
+      font-size: 16px;
+      font-weight: normal;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      padding: 30px 50px;
+      background: white;
+    }
+
+    .card {
+      background: white;
+      text-align: center;
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .card p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .bold-title {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .video-section {
+      text-align: center;
+      padding: 40px 20px;
+      background: white;
+    }
+
+    .video-section h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .video-section iframe {
+      width: 90%;
+      max-width: 560px;
+      height: 315px;
+    }
+
+    .footer {
+      background-color: #f0f0f0;
+      padding: 20px;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .footer img {
+      height: 20px;
+      vertical-align: left;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <nav>
+      <a href="home.html">HOME</a>
+      <a href="eventos.html">EVENTOS</a>
+      <a href="contato.html">CONTATO</a>
+
+      <div class="dropdown">
+        <a href="cursos.html">CURSOS</a>
+        <div class="dropdown-content">
+          <a href="#">Análise e Desenvolvimento de Sistemas</a>
+          <a href="#">Engenharia de Produção</a>
+        </div>
+      </div>
+
+      <a href="entrar.html">ENTRAR</a>
+    </nav>
+    <nav>
+      <a href="sobre.html">SOBRE</a>
+    </nav>
+  </div>
+
+  <div class="logo-bar">
+    <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/Logo.jpg?raw=true" alt="Logo IFSP">
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/refs/heads/master/eleicoes.jpg" alt="Eleições IFSP">
+      <p class="bold-title">Radar IFSP: informe-se sobre as eleições do dia 13 de outubro</p>
+      <p>Todos os alunos e servidores podem votar; acesse aqui a cabine de votação online do seu câmpus</p>
+    </div>
+    <div class="card">
+      <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/snct.jpg?raw=true" alt="Semana Nacional de Ciência e Tecnologia">
+      <p class="bold-title">IFSP: SNCT reúne atividades entre 19 e 24 de outubro</p>
+      <p>Programação reunirá iniciativas para aproximar pesquisadores e atividades culturais</p>
+    </div>
+    <div class="card">
+      <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/residencia.png?raw=true" alt="Residência Pedagógica">
+      <p class="bold-title">IFSP oferece bolsa aos voluntários da Residência Pedagógica</p>
+      <p>Bolsa de R$ 400,00 será paga pelo período de três meses</p>
+    </div>
+    <div class="card">
+      <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/maratona.jpeg?raw=true" alt="III InterIF">
+      <p class="bold-title">Inscrições abertas para a III Maratona InterIF</p>
+      <p>Maratona de programação do IFSP será realizada online, no dia 31 de outubro; inscrições até 26 de outubro</p>
+    </div>
+  </div>
+  
+  <div class="video-section">
+    <h2>Conheça os desafios de inovação</h2>
+    <iframe src="https://www.youtube.com/embed/5g5LQe3m8Po?si=fvdv6bHKFV-0uZI7" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div class="footer">
+    <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/refs/heads/master/facebook.png" alt="Facebook">
+    <p></p>
+    IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100
+  </div>
+
+</body>
+</html>
